@@ -5,6 +5,8 @@ import {ContactComponent} from "./contact/contact.component";
 import {ListClientsComponent} from "./clients/list-clients/list-clients.component";
 import {FormularioComponent} from "./formulario/formulario.component";
 import {MunicipiosComponent} from "./municipios/municipios.component";
+import {CreateComponent} from "./tutorials/create/create.component";
+import {TutorialsComponent} from "./tutorials/tutorials.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,6 +14,9 @@ const routes: Routes = [
   {path: 'clientes', component: ListClientsComponent},
   {path: 'formulario', component: FormularioComponent},
   {path: 'municipios', component: MunicipiosComponent},
+  {path: 'tutorials', component: TutorialsComponent},
+  {path: 'createTutorial', component: CreateComponent},
+  {path: 'Re', component: MunicipiosComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

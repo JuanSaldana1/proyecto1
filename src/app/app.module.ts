@@ -17,6 +17,11 @@ import {FormularioComponent} from './formulario/formulario.component';
 import {MaterialModule} from "./modules/material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MunicipiosComponent} from './municipios/municipios.component';
+import {StoreModule} from "@ngrx/store";
+import {ReadComponent} from './tutorials/read/read.component';
+import {CreateComponent} from './tutorials/create/create.component';
+import {TutorialsComponent} from './tutorials/tutorials.component';
+import {PrimengModule} from "./modules/primeng/primeng.module";
 
 @NgModule({
     declarations: [
@@ -29,7 +34,10 @@ import {MunicipiosComponent} from './municipios/municipios.component';
         AddClientComponent,
         ModifyClientComponent,
         FormularioComponent,
-        MunicipiosComponent
+        MunicipiosComponent,
+        ReadComponent,
+        CreateComponent,
+        TutorialsComponent
     ],
     imports: [
         BrowserModule,
@@ -37,9 +45,12 @@ import {MunicipiosComponent} from './municipios/municipios.component';
         HttpClientModule,
         MdbModule,
         MaterialModule,
+        PrimengModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
-        FormsModule
+        FormsModule,
+        StoreModule.forRoot({}),
+
     ],
     providers: [],
     bootstrap: [AppComponent]

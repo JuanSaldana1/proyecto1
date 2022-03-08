@@ -1,5 +1,5 @@
 import {Action} from "@ngrx/store";
-import {Tutorial} from "../app/models/tutorial.model";
+import {Tutorial} from "../models/tutorial.model";
 
 
 export const ADD_TUTORIAL = '[TUTORIAL] Add';
@@ -15,6 +15,8 @@ export class AddTutorial implements Action {
 export class RemoveTutorial implements Action {
     readonly type = REMOVE_TUTORIAL;
 
-    constructor(public payload: Tutorial) {
+    constructor(public payload: number) {
     }
 }
+
+export type Actions = AddTutorial | RemoveTutorial
