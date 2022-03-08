@@ -1,0 +1,262 @@
+[
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "04",
+    "nombreProvincia": "ALMERÍA"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "11",
+    "nombreProvincia": "CÁDIZ"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "14",
+    "nombreProvincia": "CÓRDOBA"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "18",
+    "nombreProvincia": "GRANADA"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "21",
+    "nombreProvincia": "HUELVA"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "23",
+    "nombreProvincia": "JAÉN"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "29",
+    "nombreProvincia": "MÁLAGA"
+  },
+  {
+    "codigoComunidad": "01",
+    "codigoProvincia": "41",
+    "nombreProvincia": "SEVILLA"
+  },
+  {
+    "codigoComunidad": "02",
+    "codigoProvincia": "22",
+    "nombreProvincia": "HUESCA"
+  },
+  {
+    "codigoComunidad": "02",
+    "codigoProvincia": "44",
+    "nombreProvincia": "TERUEL"
+  },
+  {
+    "codigoComunidad": "02",
+    "codigoProvincia": "50",
+    "nombreProvincia": "ZARAGOZA"
+  },
+  {
+    "codigoComunidad": "03",
+    "codigoProvincia": "33",
+    "nombreProvincia": "PRINCIPADO DE ASTURIAS"
+  },
+  {
+    "codigoComunidad": "04",
+    "codigoProvincia": "07",
+    "nombreProvincia": "ISLAS BALEARES"
+  },
+  {
+    "codigoComunidad": "05",
+    "codigoProvincia": "35",
+    "nombreProvincia": "LAS PALMAS"
+  },
+  {
+    "codigoComunidad": "05",
+    "codigoProvincia": "38",
+    "nombreProvincia": "SANTA CRUZ DE TENERIFE"
+  },
+  {
+    "codigoComunidad": "06",
+    "codigoProvincia": "39",
+    "nombreProvincia": "CANTABRIA"
+  },
+  {
+    "codigoComunidad": "07",
+    "codigoProvincia": "02",
+    "nombreProvincia": "ALBACETE"
+  },
+  {
+    "codigoComunidad": "07",
+    "codigoProvincia": "13",
+    "nombreProvincia": "CIUDAD REAL"
+  },
+  {
+    "codigoComunidad": "07",
+    "codigoProvincia": "16",
+    "nombreProvincia": "CUENCA"
+  },
+  {
+    "codigoComunidad": "07",
+    "codigoProvincia": "19",
+    "nombreProvincia": "GUADALAJARA"
+  },
+  {
+    "codigoComunidad": "07",
+    "codigoProvincia": "45",
+    "nombreProvincia": "TOLEDO"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "05",
+    "nombreProvincia": "ÁVILA"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "09",
+    "nombreProvincia": "BURGOS"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "24",
+    "nombreProvincia": "LEÓN"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "34",
+    "nombreProvincia": "PALENCIA"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "37",
+    "nombreProvincia": "SALAMANCA"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "40",
+    "nombreProvincia": "SEGOVIA"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "42",
+    "nombreProvincia": "SORIA"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "47",
+    "nombreProvincia": "VALLADOLID"
+  },
+  {
+    "codigoComunidad": "08",
+    "codigoProvincia": "49",
+    "nombreProvincia": "ZAMORA"
+  },
+  {
+    "codigoComunidad": "09",
+    "codigoProvincia": "08",
+    "nombreProvincia": "BARCELONA"
+  },
+  {
+    "codigoComunidad": "09",
+    "codigoProvincia": "17",
+    "nombreProvincia": "GERONA"
+  },
+  {
+    "codigoComunidad": "09",
+    "codigoProvincia": "25",
+    "nombreProvincia": "LÉRIDA"
+  },
+  {
+    "codigoComunidad": "09",
+    "codigoProvincia": "43",
+    "nombreProvincia": "TARRAGONA"
+  },
+  {
+    "codigoComunidad": "10",
+    "codigoProvincia": "03",
+    "nombreProvincia": "ALICANTE"
+  },
+  {
+    "codigoComunidad": "10",
+    "codigoProvincia": "12",
+    "nombreProvincia": "CASTELLÓN"
+  },
+  {
+    "codigoComunidad": "10",
+    "codigoProvincia": "46",
+    "nombreProvincia": "VALENCIA"
+  },
+  {
+    "codigoComunidad": "11",
+    "codigoProvincia": "06",
+    "nombreProvincia": "BADAJOZ"
+  },
+  {
+    "codigoComunidad": "11",
+    "codigoProvincia": "10",
+    "nombreProvincia": "CÁCERES"
+  },
+  {
+    "codigoComunidad": "12",
+    "codigoProvincia": "15",
+    "nombreProvincia": "LA CORUÑA"
+  },
+  {
+    "codigoComunidad": "12",
+    "codigoProvincia": "27",
+    "nombreProvincia": "LUGO"
+  },
+  {
+    "codigoComunidad": "12",
+    "codigoProvincia": "32",
+    "nombreProvincia": "ORENSE"
+  },
+  {
+    "codigoComunidad": "12",
+    "codigoProvincia": "36",
+    "nombreProvincia": "PONTEVEDRA"
+  },
+  {
+    "codigoComunidad": "13",
+    "codigoProvincia": "26",
+    "nombreProvincia": "LA RIOJA"
+  },
+  {
+    "codigoComunidad": "14",
+    "codigoProvincia": "28",
+    "nombreProvincia": "COMUNIDAD DE MADRID"
+  },
+  {
+    "codigoComunidad": "15",
+    "codigoProvincia": "31",
+    "nombreProvincia": "COMUNIDAD FORAL DE NAVARRA"
+  },
+  {
+    "codigoComunidad": "16",
+    "codigoProvincia": "01",
+    "nombreProvincia": "ÁLAVA"
+  },
+  {
+    "codigoComunidad": "16",
+    "codigoProvincia": "20",
+    "nombreProvincia": "GUIPÚZCOA"
+  },
+  {
+    "codigoComunidad": "16",
+    "codigoProvincia": "48",
+    "nombreProvincia": "VIZCAYA"
+  },
+  {
+    "codigoComunidad": "17",
+    "codigoProvincia": "30",
+    "nombreProvincia": "REGIÓN DE MURCIA"
+  },
+  {
+    "codigoComunidad": "18",
+    "codigoProvincia": "51",
+    "nombreProvincia": "CEUTA"
+  },
+  {
+    "codigoComunidad": "19",
+    "codigoProvincia": "52",
+    "nombreProvincia": "MELILLA"
+  }
+]

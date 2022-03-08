@@ -1,4 +1,3 @@
-import {MbscModule} from '@mobiscroll/angular';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
@@ -17,34 +16,33 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormularioComponent} from './formulario/formulario.component';
 import {MaterialModule} from "./modules/material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { MunicipiosComponent } from './municipios/municipios.component';
+import {MunicipiosComponent} from './municipios/municipios.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    ContactComponent,
-    Modal1Component,
-    ListClientsComponent,
-    AddClientComponent,
-    ModifyClientComponent,
-    FormularioComponent,
-    MunicipiosComponent
-  ],
-  imports: [
-    MbscModule,
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    MdbModule,
-    MaterialModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        HomeComponent,
+        ContactComponent,
+        Modal1Component,
+        ListClientsComponent,
+        AddClientComponent,
+        ModifyClientComponent,
+        FormularioComponent,
+        MunicipiosComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        MdbModule,
+        MaterialModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

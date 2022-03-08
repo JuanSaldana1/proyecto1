@@ -1,63 +1,92 @@
 <div class="row">
-  <div class="col">
-    <!-- Comunidad -->
-    <mat-form-field appearance="outline">
-      <mat-label>Comunidad</mat-label>
-      <mat-select [formControl]="comudidadFormControl">
-        <mat-option
-          *ngFor="let comunidad of comunidadesList.data"
-          [value]="comunidad.CCOM"
-          (animationend)="getProvincias()">
-          {{comunidad.COM | titlecase}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <p>{{comudidadFormControl.value}}</p>
-    <p>{{comunidadesList.data | json}}</p>
-  </div>
+    <!--<div class="col">
+      &lt;!&ndash; Comunidad &ndash;&gt;
+      <mat-form-field appearance="outline">
+        <mat-label>Comunidad</mat-label>
+        <mat-select [formControl]="comudidadFormControl">
+          <mat-option
+            *ngFor="let comunidad of comunidadesList.data"
+            [value]="comunidad.CCOM"
+            (animationend)="getProvincias()">
+            {{comunidad.COM | titlecase}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p>{{comudidadFormControl.value}}</p>
+      <p>{{comunidadesList.data | json}}</p>
+    </div>-->
 
-  <div class="col">
-    <!-- Comunidad -->
-    <select class="form-select" aria-label="Default select example">
-      <option *ngFor="let comunidad of comunidadesList.data"
-              [value]="comunidad.CCOM">{{comunidad.COM | titlecase}}</option>
-    </select>
-  </div>
+    <div class="col">
+        <!-- Comunidad -->
+        <select class="form-select" [formControl]="comudidadFormControl" aria-label="Default select example"
+                (change)="getProvincias($event)"
+                [(ngModel)]="comunidad">
+            <option *ngFor="let comunidad of comunidadesList.data"
+                    [value]="comunidad.CCOM">{{comunidad.COM | titlecase}}</option>
+        </select>
+        <p>{{comunidad}}</p>
+        <p>{{comunidadesList.data | json}}</p>
+    </div>
 
-  <div class="col">
-    <!-- Provincia -->
-    <mat-form-field appearance="outline">
-      <mat-label>Provincia</mat-label>
-      <mat-select [formControl]="provinciaFormControl"
-                  (click)="getProvincias()">
-        <mat-option *ngFor="let provincia of provinciasList.data" [value]="provincia.CPRO">
-          {{provincia.PRO | titlecase}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <p>{{provinciaFormControl.value}}</p>
-    <p>{{provinciasList.data | json}}</p>
-  </div>
+    <div class="col">
+        <!-- Provincia -->
+        <select class="form-select" [formControl]="provinciaFormControl" aria-label="Default select example"
+                [(ngModel)]="provincia" (change)="getMunicipios($event)">
+            <option *ngFor="let provincia of provinciasList.data"
+                    [value]="provincia.CPRO" (click)="getMunicipios($event)">{{provincia.PRO | titlecase}}</option>
+        </select>
+        <p>{{provincia}}</p>
+        <p>{{provinciasList.data | json}}</p>
+    </div>
 
-  <div class="col">
-    <!-- Municipio -->
-    <mat-form-field appearance="outline">
-      <mat-label>Municipio</mat-label>
-      <mat-select [formControl]="municipioFormControl" [disabled]="!provinciaFormControl.value">
-        <mat-option *ngFor="let municipio of municipiosList.data | async" [value]="municipio.DMUN50">
-          {{municipio.DMUN50 | titlecase}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <p>{{municipioFormControl.value}}</p>
-  </div>
+    <div class="col">
+        <!-- Municipio -->
+        <select class="form-select" [formControl]="municipioFormControl" aria-label="Default select example"
+                [(ngModel)]="municipio">
+            <option *ngFor="let municipio of municipiosList.data"
+                    [value]="municipio.CMUM">{{municipio.DMUN50 | titlecase}}</option>
+        </select>
+        <p>{{municipio}}</p>
+        <p>{{municipiosList.data | json}}</p>
+    </div>
+</div>
+<!--<div class="col">
+  &lt;!&ndash; Provincia &ndash;&gt;
+  <mat-form-field appearance="outline">
+    <mat-label>Provincia</mat-label>
+    <mat-select [formControl]="provinciaFormControl"
+                (click)="getProvincias()">
+      <mat-option *ngFor="let provincia of provinciasList.data" [value]="provincia.CPRO">
+        {{provincia.PRO | titlecase}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>{{provinciaFormControl.value}}</p>
+  <p>{{provinciasList.data | json}}</p>
+</div>
+
+<div class="col">
+  &lt;!&ndash; Municipio &ndash;&gt;
+  <mat-form-field appearance="outline">
+    <mat-label>Municipio</mat-label>
+    <mat-select [formControl]="municipioFormControl" [disabled]="!provinciaFormControl.value"
+                (click)="getMunicipios()">
+      <mat-option *ngFor="let municipio of municipiosList.data" [value]="municipio.CMUM">
+        {{municipio.DMUN50 | titlecase}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>{{municipioFormControl.value}}</p>
+  <p>{{municipiosList.data | json}}</p>
+</div>
 </div>
 
 <mat-selection-list>
-  <div class="" *ngFor="let municipio of municipiosList.data">
-    <mat-list-option>
-      {{municipio.DMUN50 | titlecase}}
-    </mat-list-option>
-    <mat-divider></mat-divider>
-  </div>
+<div class="" *ngFor="let municipio of municipiosList.data">
+  <mat-list-option>
+    {{municipio.DMUN50 | titlecase}}
+  </mat-list-option>
+  <mat-divider></mat-divider>
+</div>
 </mat-selection-list>
+-->
