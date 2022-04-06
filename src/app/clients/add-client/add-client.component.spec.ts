@@ -19,7 +19,11 @@ describe('AddClientComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('El componente se ha creado.', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Se hace la llamada al servicio.', () => {
+    expect(component.ngOnInit).toBeTruthy();
   });
 });

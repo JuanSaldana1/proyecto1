@@ -7,6 +7,8 @@ import {FormularioComponent} from "./formulario/formulario.component";
 import {MunicipiosComponent} from "./municipios/municipios.component";
 import {CreateComponent} from "./tutorials/create/create.component";
 import {TutorialsComponent} from "./tutorials/tutorials.component";
+import {ListaTareasComponent} from "./lista-tareas/lista-tareas.component";
+import {AngularMaterialComponent} from "./angular-material/angular-material.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -15,8 +17,9 @@ const routes: Routes = [
   {path: 'formulario', component: FormularioComponent},
   {path: 'municipios', component: MunicipiosComponent},
   {path: 'tutorials', component: TutorialsComponent},
+  {path: 'material', component: AngularMaterialComponent},
   {path: 'createTutorial', component: CreateComponent},
-  {path: 'Re', component: MunicipiosComponent},
+  {path: 'listaTareas', component: ListaTareasComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

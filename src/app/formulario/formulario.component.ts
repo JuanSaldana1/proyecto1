@@ -8,7 +8,11 @@ import {MunicipiosService} from "../services/municipios.service";
   styleUrls: ['./formulario.component.scss']
 })
 export class FormularioComponent implements OnInit {
+  miFormulario = new FormGroup({
+    username: new FormControl('Nancy', Validators.minLength(2)),
+  });
   myControl = new FormControl();
+  username: FormControl | undefined;
   selected: Date = new Date();
   options: any = [];
   genderData = [{text: 'Male', value: 'M'}, {text: 'Female', value: 'F'}];
@@ -23,8 +27,4 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  miFormulario = new FormGroup({
-    username: new FormControl('', Validators.required)
-  });
 }

@@ -45,12 +45,14 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatTreeModule} from "@angular/material/tree";
 import {MatLuxonDateModule} from "@angular/material-luxon-adapter";
+import {DragDropModule} from "@angular/cdk/drag-drop";
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    DragDropModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -95,6 +97,7 @@ import {MatLuxonDateModule} from "@angular/material-luxon-adapter";
     MatTreeModule,
   ],
   exports: [
+    DragDropModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,

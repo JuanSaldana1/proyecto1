@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {MdbAccordionModule} from "mdb-angular-ui-kit/accordion";
 import {MdbCarouselModule} from "mdb-angular-ui-kit/carousel";
 import {MdbCheckboxModule} from "mdb-angular-ui-kit/checkbox";
@@ -15,8 +15,6 @@ import {MdbScrollspyModule} from "mdb-angular-ui-kit/scrollspy";
 import {MdbTabsModule} from "mdb-angular-ui-kit/tabs";
 import {MdbTooltipModule} from "mdb-angular-ui-kit/tooltip";
 import {MdbValidationModule} from "mdb-angular-ui-kit/validation";
-
-
 
 @NgModule({
   declarations: [],
@@ -54,6 +52,8 @@ import {MdbValidationModule} from "mdb-angular-ui-kit/validation";
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-  ]
+  ],
+  providers: []
 })
-export class MdbModule { }
+export class MdbModule {
+}

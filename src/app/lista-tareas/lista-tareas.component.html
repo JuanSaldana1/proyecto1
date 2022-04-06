@@ -1,0 +1,53 @@
+<h1>{{miLista}}</h1>
+<h2>Listado de tareas</h2>
+<ul class="list-group list-group-flush">
+  <li *ngFor="let tarea of listaTareas" class="list-group-item">
+    {{tarea}}
+    <button (click)="deleteTarea(tarea)" class="p-button-rounded p-button-danger" icon="pi pi-trash" pButton pRipple
+            type="button"></button>
+  </li>
+</ul>
+
+<div>
+  <mbsc-input type="email" placeholder="Email">Email</mbsc-input>
+  <mbsc-input type="password" placeholder="Password">Password</mbsc-input>
+  <mbsc-switch>I agree</mbsc-switch>
+</div>
+
+<mbsc-select [data]="genderData" label="Select"></mbsc-select>
+
+<mbsc-calendar [(ngModel)]="birthday" display="inline">My Birthday</mbsc-calendar>
+
+<mbsc-form>
+  <div class="mbsc-grid mbsc-form-grid">
+    <div class="mbsc-row">
+      <div class="mbsc-col-sm-12 mbsc-col-md-6">
+        <mbsc-calendar [(ngModel)]="mobile" [options]="mobileSettings" placeholder="Please Select..." input-style="box">Mobile</mbsc-calendar>
+      </div>
+      <div class="mbsc-col-sm-12 mbsc-col-md-6">
+        <mbsc-calendar [(ngModel)]="desktop" [options]="desktopSettings" placeholder="Please Select..." input-style="box">Desktop</mbsc-calendar>
+      </div>
+    </div>
+  </div>
+</mbsc-form>
+
+<h2>Añadir tarea</h2>
+<form (submit)="addTarea()">
+  <input [(ngModel)]="texto" [ngModelOptions]="{standalone: true}" pInputText type="text"/>
+  <small class="p-error block" *ngIf="texto.length === 0 || texto.toString() === ''" id="username2-help">La tarea está
+    vacía</small>
+</form>
+
+
+<div id="entrada" [ngClass]="tipoDeClase()">
+  <h4 [ngStyle]="estiloActual">{{entrada.titulo}}</h4>
+  <h4>{{entrada.descripcion}}</h4>
+</div>
+
+<div>
+  <p>Today is {{today | date}}</p>
+  <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+  <p>The time is {{today | date:'h:mm a z'}}</p>
+</div>
+
+<mbsc-eventcalendar [data]="events" [options]="eventSettings"></mbsc-eventcalendar>
