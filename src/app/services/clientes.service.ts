@@ -1,5 +1,9 @@
-import { Injectable } from '@angular/core';
+/* eslint-disable new-cap */
+/* eslint-disable require-jsdoc */
+/* eslint-disable no-unused-vars */
+import { environment } from './../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { catchError, Observable } from 'rxjs';
 import { Client } from '../models/client';
 
@@ -11,15 +15,14 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class ClientesService {
-  baseUrl: string = 'https://barrosback.herokuapp.com/';
   private _result: any;
 
   constructor(private http: HttpClient) {}
 
   getAllClients() {
     return this.http
-      .get<Observable<Client[]>>(this.baseUrl + 'listAllClients')
-      .pipe(catchError(this.handleError('get', [])));
+        .get<Observable<Client[]>>(environment.baseUrl + 'client/getAll')
+        .pipe(catchError(this.handleError('get', [])));
   }
 
   private handleError(operation = 'operation', result?: any) {
