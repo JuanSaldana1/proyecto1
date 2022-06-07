@@ -1,10 +1,10 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
-import {HomeComponent} from './home.component';
-import {BrowserModule} from "@angular/platform-browser";
-import {HttpClientTestingModule} from "@angular/common/http/testing";
-import {RouterTestingModule} from "@angular/router/testing";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MdbModalRef, MdbModalService} from "mdb-angular-ui-kit/modal";
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomeComponent } from './home.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -20,9 +20,8 @@ describe('HomeComponent', () => {
         RouterTestingModule,
       ],
       providers: [MdbModalService, MdbModalRef],
-      declarations: [HomeComponent]
-    })
-      .compileComponents();
+      declarations: [HomeComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

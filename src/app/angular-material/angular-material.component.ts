@@ -1,10 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {CdkDragDrop, moveItemInArray} from "@angular/cdk/drag-drop";
+import { Component, OnInit } from '@angular/core';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-angular-material',
   templateUrl: './angular-material.component.html',
-  styleUrls: ['./angular-material.component.scss']
+  styleUrls: ['./angular-material.component.scss'],
 })
 export class AngularMaterialComponent implements OnInit {
   movies = [
@@ -23,10 +23,7 @@ export class AngularMaterialComponent implements OnInit {
     moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
   }
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

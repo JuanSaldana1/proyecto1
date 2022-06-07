@@ -1,5 +1,5 @@
 <div class="row">
-    <!--<div class="col">
+  <!--<div class="col">
       &lt;!&ndash; Comunidad &ndash;&gt;
       <mat-form-field appearance="outline">
         <mat-label>Comunidad</mat-label>
@@ -16,39 +16,65 @@
       <p>{{comunidadesList.data | json}}</p>
     </div>-->
 
-    <div class="col">
-        <!-- Comunidad -->
-        <select class="form-select" [formControl]="comudidadFormControl" aria-label="Default select example"
-                (change)="getProvincias($event)"
-                [(ngModel)]="comunidad">
-            <option *ngFor="let comunidad of comunidadesList.data"
-                    [value]="comunidad.CCOM">{{comunidad.COM | titlecase}}</option>
-        </select>
-        <p>{{comunidad}}</p>
-        <p>{{comunidadesList.data | json}}</p>
-    </div>
+  <div class="col">
+    <!-- Comunidad -->
+    <select
+      class="form-select"
+      [formControl]="comudidadFormControl"
+      aria-label="Default select example"
+      (change)="getProvincias($event)"
+      [(ngModel)]="comunidad"
+    >
+      <option
+        *ngFor="let comunidad of comunidadesList.data"
+        [value]="comunidad.CCOM"
+      >
+        {{ comunidad.COM | titlecase }}
+      </option>
+    </select>
+    <p>{{ comunidad }}</p>
+    <p>{{ comunidadesList.data | json }}</p>
+  </div>
 
-    <div class="col">
-        <!-- Provincia -->
-        <select class="form-select" [formControl]="provinciaFormControl" aria-label="Default select example"
-                [(ngModel)]="provincia" (change)="getMunicipios($event)">
-            <option *ngFor="let provincia of provinciasList.data"
-                    [value]="provincia.CPRO" (click)="getMunicipios($event)">{{provincia.PRO | titlecase}}</option>
-        </select>
-        <p>{{provincia}}</p>
-        <p>{{provinciasList.data | json}}</p>
-    </div>
+  <div class="col">
+    <!-- Provincia -->
+    <select
+      class="form-select"
+      [formControl]="provinciaFormControl"
+      aria-label="Default select example"
+      [(ngModel)]="provincia"
+      (change)="getMunicipios($event)"
+    >
+      <option
+        *ngFor="let provincia of provinciasList.data"
+        [value]="provincia.CPRO"
+        (click)="getMunicipios($event)"
+      >
+        {{ provincia.PRO | titlecase }}
+      </option>
+    </select>
+    <p>{{ provincia }}</p>
+    <p>{{ provinciasList.data | json }}</p>
+  </div>
 
-    <div class="col">
-        <!-- Municipio -->
-        <select class="form-select" [formControl]="municipioFormControl" aria-label="Default select example"
-                [(ngModel)]="municipio">
-            <option *ngFor="let municipio of municipiosList.data"
-                    [value]="municipio.CMUM">{{municipio.DMUN50 | titlecase}}</option>
-        </select>
-        <p>{{municipio}}</p>
-        <p>{{municipiosList.data | json}}</p>
-    </div>
+  <div class="col">
+    <!-- Municipio -->
+    <select
+      class="form-select"
+      [formControl]="municipioFormControl"
+      aria-label="Default select example"
+      [(ngModel)]="municipio"
+    >
+      <option
+        *ngFor="let municipio of municipiosList.data"
+        [value]="municipio.CMUM"
+      >
+        {{ municipio.DMUN50 | titlecase }}
+      </option>
+    </select>
+    <p>{{ municipio }}</p>
+    <p>{{ municipiosList.data | json }}</p>
+  </div>
 </div>
 <!--<div class="col">
   &lt;!&ndash; Provincia &ndash;&gt;

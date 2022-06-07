@@ -8,9 +8,8 @@ describe('AngularMaterialComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AngularMaterialComponent ]
-    })
-    .compileComponents();
+      declarations: [AngularMaterialComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

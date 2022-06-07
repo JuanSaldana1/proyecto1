@@ -1,11 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {Tarea} from "../models/Tarea";
-import {MbscCalendarOptions, MbscEventcalendarOptions, mobiscroll} from "@mobiscroll/angular";
+import { Component, OnInit } from '@angular/core';
+import { Tarea } from '../models/Tarea';
+import {
+  MbscCalendarOptions,
+  MbscEventcalendarOptions,
+  mobiscroll,
+} from '@mobiscroll/angular';
 
 @Component({
   selector: 'app-lista-tareas',
   templateUrl: './lista-tareas.component.html',
-  styleUrls: ['./lista-tareas.component.scss']
+  styleUrls: ['./lista-tareas.component.scss'],
 })
 export class ListaTareasComponent implements OnInit {
   events: any;
@@ -15,7 +19,10 @@ export class ListaTareasComponent implements OnInit {
   birthday: Date | undefined;
   listaTareas: string[] = [];
   entrada: Tarea = new Tarea(3, 'Mi titulo', 'Mi resumen');
-  genderData = [{text: 'Male', value: 'M'}, {text: 'Female', value: 'F'}];
+  genderData = [
+    { text: 'Male', value: 'M' },
+    { text: 'Female', value: 'F' },
+  ];
   texto: string = '';
   estiloActual: any = '';
   today: number = Date.now();
@@ -27,24 +34,27 @@ export class ListaTareasComponent implements OnInit {
     calendarHeight: 610,
     view: {
       calendar: {
-        labels: true
-      }
+        labels: true,
+      },
     },
     onEventSelect: (event, inst) => {
       mobiscroll.toast({
-        message: event.event.text
+        message: event.event.text,
       });
-    }
+    },
   };
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    this.listaTareas = ['Hacer la compra', 'Regar las plantas', 'Hacer la comida'];
+    this.listaTareas = [
+      'Hacer la compra',
+      'Regar las plantas',
+      'Hacer la comida',
+    ];
     this.estiloActual = {
-      'color': this.entrada.id % 2 == 0 ? 'blue' : 'white',
-    }
+      color: this.entrada.id % 2 == 0 ? 'blue' : 'white',
+    };
   }
 
   addTarea() {
@@ -69,18 +79,17 @@ export class ListaTareasComponent implements OnInit {
 
   public tipoDeClase(): any {
     return {
-      'oscuro': this.entrada.id % 2 == 0,
-      'claro': this.entrada.id % 2 != 0,
-    }
+      oscuro: this.entrada.id % 2 == 0,
+      claro: this.entrada.id % 2 != 0,
+    };
   }
 
   mobileSettings: MbscCalendarOptions = {
-    display: 'bubble'
+    display: 'bubble',
   };
 
   desktopSettings: MbscCalendarOptions = {
     display: 'bubble',
-    touchUi: false
+    touchUi: false,
   };
-
 }

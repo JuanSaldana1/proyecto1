@@ -1,18 +1,38 @@
 <p>create works!</p>
 <div class="grid p-fluid">
-    <div class="col-12 md:col-4">
-        <div class="p-inputgroup input-group">
-            <input class="p-inputtext-sm" type="text" pInputText placeholder="name" #name>
-        </div>
+  <div class="col-12 md:col-4">
+    <div class="p-inputgroup input-group">
+      <input
+        class="p-inputtext-sm"
+        type="text"
+        pInputText
+        placeholder="name"
+        #name
+      />
     </div>
+  </div>
 
-    <div class="col-12 md:col-4">
-        <div class="p-inputgroup input-group">
-            <span class="p-inputgroup-addon">www</span>
-            <input class="p-inputtext-sm" type="text" pInputText placeholder="Website" #url>
-        </div>
+  <div class="col-12 md:col-4">
+    <div class="p-inputgroup input-group">
+      <span class="p-inputgroup-addon">www</span>
+      <input
+        class="p-inputtext-sm"
+        type="text"
+        pInputText
+        placeholder="Website"
+        #url
+      />
     </div>
-    <p-button label="Save" icon="pi pi-check" (click)="addTutorial(name.value, url.value)"></p-button>
-    <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary"
-              [style]="{'margin-left': '.5em'}"></p-button>
+  </div>
+  <p-button
+    label="Save"
+    icon="pi pi-check"
+    (click)="addTutorial(name.value, url.value)"
+  ></p-button>
+  <p-button
+    label="Cancel"
+    icon="pi pi-times"
+    styleClass="p-button-secondary"
+    [style]="{ 'margin-left': '.5em' }"
+  ></p-button>
 </div>

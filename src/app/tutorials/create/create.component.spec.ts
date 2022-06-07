@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CreateComponent } from './create.component';
-import {StoreModule} from "@ngrx/store";
+import { StoreModule } from '@ngrx/store';
 
 describe('CreateComponent', () => {
   let component: CreateComponent;
@@ -9,10 +9,9 @@ describe('CreateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StoreModule.forRoot({}),],
-      declarations: [ CreateComponent ]
-    })
-    .compileComponents();
+      imports: [StoreModule.forRoot({})],
+      declarations: [CreateComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
