@@ -28,6 +28,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CreateComponent } from './tutorials/create/create.component';
 import { ReadComponent } from './tutorials/read/read.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 mobiscroll.settings = {
   theme: 'material',
@@ -53,6 +55,8 @@ mobiscroll.settings = {
     ProgressComponent,
     ReadComponent,
     TutorialsComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     AppRoutingModule,
